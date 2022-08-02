@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100vw;
+}
+header {
+    height:74px;
+    width:100%;
+    background:#1B1310;
+    border-bottom: solid 2px #ffffff;
+    position:fixed;
+    opacity: 70%;
+}
+
+.top{
+    margin-left: 120px;
+}
+.top a{
+    color:#ffffff;
+    float:left;
+    text-decoration: none;
+    font-size:26px;
+    margin-top:19px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.top-link{
+    margin-right: 120px;
+    float:right;
+    margin-top:27px;
+
+}
+
+.top-link a{
+    color:#ffffff;
+    text-decoration: none;
+    margin-left:55px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.hamburger{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+.top-wrapper{
+    height:auto;
+    width:100%;
+}
+
+.sp{
+    display: none;
+}
+
+
+.top-wrapper img{
+    width:100vw;
+    margin-left:calc(-50vw + 50%);
+    max-width: none;
+    height:auto;
+}
+
+.contents-wrapper {
+    width:1030px;
+    margin:0 auto;
+}
+
+.contents-wrapper h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: Roboto;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+
+.contents-wrapper h2{
+    font-size: 24px;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: bold;
+    line-height: 2.0;
+    letter-spacing: 0.1em;
+    margin-bottom: 42px;
+}
+
+.about-wrapper h1{
+    margin-top:100px;
+}
+
+.about-wrapper h2{
+    margin-top: 72px;
+}
+
+.contents-wrapper p{
+    font-size: 14px;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height:2.14;
+}
+
+.service-wrapper{
+    margin-bottom: 150px;
+}
+
+.service-wrapper h1{
+    margin-top:150px;
+    margin-bottom:70px;
+}
+
+.service-wrapper img{
+    width:480px;
+    height:240px;
+}
+
+.service1{
+    margin-top:70px;
+    margin-bottom: 50px;
+}
+
+
+
+.service1 img{
+    float:left;
+    margin-right:70px;
+}
+
+.service1 content{
+    float:right;
+}
+
+.service2 img{
+    float:right;
+    margin-left:70px;
+}
+
+.service2 content{
+    float:left;
+}
+
+.news-wrapper{
+    margin-bottom:150px;
+}
+
+.news-wrapper h1{
+    margin-bottom:70px;
+    letter-spacing: 0.1em;
+
+}
+
+.cards{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width:320px;
+    height:323px;
+    box-shadow: 0 0 6px rgba(27,19,16,0.4) ;
+}
+
+.card img{
+    height:200px;
+}
+
+.cards p{
+    font-family: "HiraKakuProN-W6",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.92;
+    letter-spacing: 0.05em;
+    padding:25px 34px 25px 32px ;
+}
+
+form{
+    width:700px;
+    margin:0 auto;
+    display: block;
+}
+
+form h2{
+    margin-bottom: 68px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 2.0;
+    font-family: noto-sans-cjk-jp, sans-serif;
+}
+
+form p{
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN ",sans-serif;
+    font-weight: 300;
+    line-height: 1.875;
+    letter-spacing: 0.05em;
+    padding-bottom: 0px;
+    margin-bottom: -8px;
+}
+
+form .text-form{
+    width:100%;
+    height:30px;
+    margin-bottom: 22px;
+    border:solid 1px #141414;
+}
+
+form textarea{
+    width:100%;
+    height:171px;
+    padding:2px;
+    border:solid 1px #141414;
+
+}
+
+form .button{
+    display: block;
+    margin:50px auto;
+    width:235px;
+    height:59px;
+    background-color: #1B1310;
+    color:#FFFFFF;
+    border-radius: 51px;
+    box-shadow:0 0 6px #1B1310;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-family: "Avenir",sans-serif;
+}
+
+form .button:hover{
+    cursor: pointer;
+}
+
+footer{
+    height:79px;
+    background-color: #1B1310;
+    width:100%;
+}
+
+footer p{
+    color:#ffffff;
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    padding-top:29px;
+    letter-spacing: 0.05em;
+
+}
+
+@media screen and (max-width:480px){
+    *{
+        float: none;
+        position: static;
+    }
+
+    img{
+
+        max-width: 100%;
+    }
+
+
+    header{
+        width:100%;
+        z-index: 100;
+
+    }
+
+    .top{
+        margin-left: 15px;
+    }
+
+    .top a{
+        letter-spacing: 0;
+        float:left;
+    }
+
+    .top-link{
+        display: none;
+    }
+
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top:30px;
+        right:15px;
+        width: 25px;
+        height: 18px;
+        cursor: pointer;
+        transition:.7s;
+    }
+
+    .inner_line{
+        display: block;
+        width: 25px;
+        height:2px;
+        background-color: #ffffff;
+        transition: .7s;
+        position:absolute;
+        left:0;
+    }
+
+    #line1{
+        top:0;
+    }
+
+    #line2{
+        top:8px;
+    }
+
+    #line3{
+        bottom:0;
+    }
+
+
+    .menu{
+        position:fixed;
+        width: 100%;
+        height:665px;
+        background-color:#1B1310;
+        transition: .7s;
+    }
+
+    .menu ul{
+        position:relative;
+        top:212px;
+        height:242px;
+        text-align: center;
+        flex-flow: column;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .menu a{
+        color:#FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        font-family: Roboto;
+        text-decoration: none;
+        list-style: none;
+    }
+
+
+    
+
+    .line_1{
+        margin-top:8px;
+        transform:rotate(-45deg);
+        
+    }
+
+    .line_2{
+        opacity:0;
+    }
+
+    .line_3{
+        margin-bottom: 8px;
+        transform:rotate(45deg);
+        
+    }
+
+    .in{
+        display:block;
+    }
+
+
+    .pc{
+        display:none;
+    }
+
+    .sp{
+        display: block;
+    }
+
+
+    .contents-wrapper{
+        width: 345px;
+    }
+
+
+    .service-wrapper img{
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .service2 .sp{
+        margin-bottom: 150px;
+    }
+
+    .news-wrapper{
+        margin-top: 100px;
+    }
+
+
+    .cards{
+        height: 1069px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    form{
+        width:100%
+    }
+}
